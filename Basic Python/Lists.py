@@ -31,3 +31,20 @@ for name in student_names:
 for index in range(len(student_names),2):
     print ('Student name is {0}'.format(student_names[index]))
 
+# Break and continue
+for name in student_names:
+    if name == 'Ram':
+        continue
+    if name == 'katarina':
+        break
+    print ('Found {0}'.format(name))
+
+# Function overloading
+def add (x):
+    return x+y
+
+def add (x,y=2):
+    return x+y
+
+print (add(5))
+print (add(6,7))
